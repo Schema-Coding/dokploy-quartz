@@ -11,7 +11,7 @@ services:
       GIT_BRANCH: "v4"
     volumes:
       # Mount your Obsidian vault for Quartz to read and build the notes from
-      # - /path/on/host:/vault:ro
+      - ../files/teaching-vault:/vault:ro
       # Mount existing quartz
       # - /path/on/host:/usr/src/app/quartz
       # Optional: Persist logs if needed
