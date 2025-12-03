@@ -2,6 +2,9 @@ services:
   quartz:
     image: shommey/dockerized-quartz
     container_name: quartz-notes
+    build: 
+      context: .
+      dockerfile: Dockerfile
     environment:
       # Use your custom Quartz repo or leave blank for the default Quartz repo
       GIT_REPO: 
