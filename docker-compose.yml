@@ -16,5 +16,5 @@ services:
       # - /path/on/host:/var/log/nginx
     ports:
       # Map any port on the host to port 80 in the container for web access
-      - "80:80"
+      - "80"
     restart: unless-stopped
